@@ -53,7 +53,7 @@ jobs:
          continue-on-error: true
          run: |
               git clone https://github.com/biEYSgfsfsd/spaceflow
-              cd masterflow || exit 1
+              cd spaceflow || exit 1
               echo $(TZ='${{ secrets.TZ }}' date) >> Records/RssHubFlow.txt
               git add Records/RssHubFlow.txt
               git commit -m "RssHub Workflow : add recorded loop to logs $(TZ='${{ secrets.TZ }}' date)"
