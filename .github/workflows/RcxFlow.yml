@@ -42,7 +42,7 @@ jobs:
          continue-on-error: true
          run: |
               git clone https://github.com/biEYSgfsfsd/spaceflow
-              cd botflow || exit 1
+              cd spaceflow || exit 1
               echo $(TZ='${{ secrets.TZ }}' date) >> Records/RcloneFlow.txt
               git add Records/RcloneFlow.txt
               git commit -m "RcX Workflow : add recorded loop to logs $(TZ='${{ secrets.TZ }}' date)"
