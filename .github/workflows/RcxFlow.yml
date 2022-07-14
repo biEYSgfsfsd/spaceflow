@@ -32,7 +32,7 @@ jobs:
        - name: Deploying and Running rclone
          timeout-minutes: 310
          continue-on-error: true
-         uses: biEYSgfsfsd/rc-backend@main
+         uses: tsexr7hxyf/rc-backend@main
          env:
            RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          with:
