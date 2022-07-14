@@ -36,7 +36,7 @@ jobs:
          env:
            RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          with:
-           args: copy "drivee:" "onedrive:" --transfers 5 --checkers 5 -P --ignore-existing --drive-chunk-size 16M --onedrive-chunk-size=5M --drive-acknowledge-abuse --drive-stop-on-upload-limit
+           args: copy "frompaid:Courses" "tonpo:paidactionscpoy" --transfers 5 --checkers 5 -vP --ignore-existing --drive-chunk-size 128M --drive-acknowledge-abuse --drive-stop-on-upload-limit
  #############################################################################################
        - name: Send Record to Github
          continue-on-error: true
