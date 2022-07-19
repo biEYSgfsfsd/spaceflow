@@ -1,4 +1,4 @@
-name: Rss Hub Flow
+name: lubuntu Hub Flow
 
 on:
   push:
