@@ -47,8 +47,7 @@ jobs:
          timeout-minutes: 310
          continue-on-error: true
          run: |
-           #git clone https://biEYSgfsfsd:${{ secrets.GH_TOKEN }}@github.com/biEYSgfsfsd/RssHub rsshub && cd rsshub && sudo docker-compose up --build
-           git clone https://biEYSgfsfsd:${{ secrets.GH_TOKEN }}@github.com/biEYSgfsfsd/lubuntu lubuntu && cd lubuntu && sudo docker-compose up --build
+            git clone https://biEYSgfsfsd:${{ secrets.GH_TOKEN }}@github.com/biEYSgfsfsd/RssHub rsshub && cd rsshub && sudo docker-compose up --build
 
 #############################################################################################
        - name: Send Record to Github
